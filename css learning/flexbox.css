@@ -1,0 +1,139 @@
+/* h1 {
+    text-align: center;
+}
+
+#container {
+    background-color: #003049;
+    width: 90%; */
+/* height: 500px; */
+/* margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; */
+/* flex-wrap: wrap; */
+/* align-items: flex-start; */
+/* }
+
+div {
+    width: 200px;
+    height: 200px;
+    flex-basis: 200px;
+    flex-grow: 1; */
+/* max-width: 300px;
+    min-width: 250px; */
+/* min and max width r generally used to set the min width level and max width level */
+
+/* }
+
+div:nth-of-type(2n) { */
+/* align-self: center; */
+/* flex-shrink: 2;
+} */
+
+/* so here i have added display as flex to the container so the div tags are alined as main axis and fit inside the container id
+there are two axis in flex main and cross axis and main axis has 4 values row , row-reverse, column, column-reverse- */
+
+/* h2 {
+    text-align: center;
+}
+
+main {
+    width: 90%;
+    height: 500px;
+    border: 5px solid black;
+    margin: 0 auto;
+    display: flex; */
+/* flex-wrap: wrap; */
+/* }
+
+.sidebar {
+
+    background-color: bisque;
+    flex: 1 2 300px; */
+/* flex-basis: 200px;
+    flex-grow: 1; */
+
+/* }
+
+.maincontent {
+
+    background-color: aquamarine;
+    flex: 2 800px;
+} */
+
+/* the above is fully about flex */
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    h1 {
+        color: orangered;
+        font-size: 40px;
+    }
+
+    nav {
+
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+    h1 {
+        color: brown;
+        font-size: 100px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+    h1 {
+        color: blueviolet;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+    h1 {
+        color: red;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    h1 {
+        color: green;
+    }
+}

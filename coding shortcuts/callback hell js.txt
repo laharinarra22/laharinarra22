@@ -1,0 +1,44 @@
+let callbackeg = function (url, sucess, failure) {
+    let delay = Math.floor(Math.random() * 4500) + 500;
+
+    setTimeout(function () {
+        if (delay > 4000) {
+            failure('you  failed');
+        }
+        else {
+            sucess('you passed');
+        }
+    }, delay);
+}
+
+
+callbackeg
+    (
+        'www.google.com',
+        () => {
+            console.log('yay1');
+            callbackeg
+                (
+                    'www.apple.com',
+                    () => {
+                        console.log('yay2');
+                        callbackeg
+                            (
+                                'www.netflix.com',
+                                () => {
+                                    console.log('yay3');
+                                },
+                                () => {
+                                    console.log('nah3');
+                                }
+                            )
+                    },
+                    () => {
+                        console.log('nah2');
+                    }
+                )
+        },
+        () => {
+            console.log('nah1');
+        }
+    )

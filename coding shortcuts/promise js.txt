@@ -1,0 +1,33 @@
+let fakepromise = function (url) {
+    return new Promise((resolve, reject) => {
+        let delay = Math.floor(Math.random() * 4500) + 500;
+        setTimeout(function () {
+            if (delay > 4000) {
+                reject('you failed');
+            }
+            else {
+                resolve(`you passed ${url}`);
+            }
+        }, delay)
+    })
+}
+
+fakepromise('google.com/page1')
+    .then((data) => {
+        console.log('it worked 1')
+        console.log(data)
+        return fakepromise('google.com/page2')
+    })
+    .then((data) => {
+        console.log('it worked 2')
+        console.log(data)
+        return fakepromise('google.com/page3')
+    })
+    .then((data) => {
+        console.log('it worked 3')
+        console.log(data)
+    })
+    .catch((err) => {
+        console.log('failed')
+        console.log(err)
+    })

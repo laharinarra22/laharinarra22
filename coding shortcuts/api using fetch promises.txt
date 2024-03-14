@@ -1,0 +1,16 @@
+fetch('https://swapi.dev/api/people/5/')
+    .then((req) => {
+        console.log('success', req)
+        return req.json()
+    })
+    .then((data) => {
+        console.log(data)
+        return fetch('https://swapi.dev/api/people/4/')
+    })
+    .then((req) => {
+        console.log('second one success', req)
+        return req.json()
+    })
+    .catch((e) =>
+        console.log('failed', e)
+    )

@@ -1,0 +1,30 @@
+let fakepromise = function (url) {
+    return new Promise((resolve, reject) => {
+        let delay = Math.floor(Math.random() * 4500) + 500;
+        setTimeout(function () {
+            if (delay > 4000) {
+                reject('you failed');
+            }
+            else {
+                resolve(`you passed ${url}`);
+            }
+        }, delay)
+    })
+}
+
+
+async function makereq() {
+    try {
+        let data1 = await fakepromise('/page1')
+        console.log(data1)
+        let data2 = await fakepromise('/page2')
+        console.log(data2)
+        let data3 = await fakepromise('/page3')
+        console.log(data3)
+    }
+    catch (e) {
+        console.log(e);
+        console.log('attempt unsucessful')
+    }
+
+}

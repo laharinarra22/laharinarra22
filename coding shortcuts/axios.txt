@@ -1,0 +1,33 @@
+//axios get req with promises
+
+axios.get('https://swapi.dev/api/people/5/')
+    .then((req) => {
+        console.log(req);
+    })
+    .catch((e) => {
+        console.log(e)
+    })
+
+
+//axios get req with async await
+
+let starwars = async function (id) {
+    try {
+        let res = await axios.get(`https://swapi.dev/api/people/${id}/`)
+        console.log(res.data)
+    }
+    catch (e) {
+        console.log(e)
+    }
+}
+
+starwars(6)
+
+//axios with headers
+let joke = async function () {
+    let config = { headers: { Accept: 'application/json' } }
+    let res = await axios.get('https://icanhazdadjoke.com/', config)
+    console.log(res.data.joke)
+}
+
+joke()

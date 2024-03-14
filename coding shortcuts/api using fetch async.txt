@@ -1,0 +1,12 @@
+let starwars = async () => {
+    try {
+        let res = await fetch('https://swapi.dev/api/people/5/')
+        let data = await res.json();
+        console.log(data)
+    }
+    catch (e) {
+        console.log('error', e)
+    }
+}
+
+starwars()

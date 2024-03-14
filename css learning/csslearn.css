@@ -1,0 +1,562 @@
+ /* h2 {
+     color: rebeccapurple;
+ }
+
+ button {
+     color: red;
+     background-color: bisque;
+ }
+
+ p {
+     background-color: aqua;
+
+ } */
+
+
+ /* --------------------------------------------------------------------------------------------------------------- 
+ The above is learning about color and background color in css 
+ ---------------------------------------------------------------------------------------------------------------  */
+
+ /* h1 {
+     text-align: center;
+     font-weight: 400; */
+
+ /* font weight is use to make something bold or unbold 
+     eg- we can write font-weight:normal; or font-weight:bold*/
+
+ /* text-decoration: blue underline wavy; */
+
+ /* text-decoration is used to design a particular text like underline etc with specifying the color of the line ,
+     style of the line whether it is dotted line or wavy line etc and thickness of the line*/
+
+ /* font-size: 30px; */
+
+ /* font-size is used for sizing the fonts */
+
+ /* font-family: Arial; */
+
+ /* font-family is used to apply different text styles 
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+     the above is font family is font stack we do this because not all system are compatible with every fonts available 
+     so the above font family are stacked and chosen in ascending order preference*/
+ /* } */
+
+ /* p {
+     font-weight: bold;
+     line-height: 2;
+      */
+ /* the line height is used to control the height of one line to another */
+
+ /* letter-spacing: 4px; */
+
+ /* letter spacing is used to space between letters */
+ /* } */
+
+ /* a {
+     text-decoration: none; */
+
+ /* removes the text decoration line */
+ /* } */
+
+
+ /* --------------------------------------------------------------------------------------------------------------- 
+ The above is learning about css text properties
+ ---------------------------------------------------------------------------------------------------------------  */
+
+ /* * {
+     color: pink;
+     background-color: blanchedalmond;
+ } */
+
+ /* note -universal selector or * selects everything of the linked html file */
+
+ /* body {
+     background-color: #f1faee;
+ }
+
+ button {
+     font-size: 30px;
+     background-color: #a8dadc;
+
+ } */
+
+ /* element selector is the most common selector */
+ /* 
+ h1,
+ h2 {
+     color: #1d3557;
+ } */
+
+ /*combine multiple selector in a list and is used to combine 2 selectors */
+
+ /* #submit {
+     background-color: #1d3557;
+     color: #f1faee;
+ } */
+
+ /* id selector example above */
+
+ /* span {
+     color: #457b9d;
+ }
+
+ .tag {
+     background-color: #e63946;
+     color: #f1faee;
+     font-size: 16px;
+ } */
+
+ /* note- one class can be used multiple time in a html whereas a id should always be unique  */
+
+
+ /* .post a {
+     color: #457b9d;
+     text-decoration: none;
+ }
+
+ footer a {
+     color: #e63946;
+ } */
+
+ /* the above is called descendant selector which is specifically choosing a tag nested inside another tag */
+
+ /* h2+button {
+     font-size: 20px;
+ } */
+
+ /* the above is called adjacent selector which selects only the paragraph that are immediately
+ preceded by h2 */
+
+ /* footer>a {
+     color: #457b9d;
+ } */
+
+ /* the above is called direct child which selects "a" that are direct children of a "footer" */
+
+ /* input[type="password"] {
+     color: greenyellow;
+ } */
+
+ /* the above is called attribute selector which selects all input whose type is password */
+
+ /* .post button:hover {
+     background-color: #e63946;
+     color: #f1faee;
+ }
+
+ .post a:hover {
+     text-decoration: underline;
+ } */
+
+ /*  the above is a type of pseudo class which changes bg color while hovering the button inside post class*/
+
+ /* .post button:active {
+     background-color: #02c39a;
+ } */
+
+ /* the above is a type of pseudo class which changes bg color when active that is when the button is clicked 
+ it will change its bg color */
+
+ /* .post:nth-of-type(3n) {
+     background-color: #dfe8dc;
+ } */
+
+ /* the above is a type of pseudo class which adds bg color for every 3rd class named post  */
+
+ /* h2::first-letter {
+     font-size: 50px;
+ } */
+
+ /* the above is a type of pseudo elements which changes the first letter of the h2 */
+
+ /* p::first-line {
+     color: purple;
+ } */
+
+ /* the above is a type of pseudo elements which changes the color of first letter of the p*/
+
+ /* p::selection {
+     background-color: #e63946;
+ } */
+
+ /* the above is a type of pseudo elements which changes the bg to red while selecting something in the p */
+
+ /* --------------------------------------------------------------------------------------------------------------- 
+ The above is learning about css selectors
+ ---------------------------------------------------------------------------------------------------------------  */
+
+ /* div {
+     width: 200px;
+     height: 200px;
+     background-color: #e5989b;
+ }
+
+ h1 {
+     width: 100px;
+     background-color: pink;
+ }
+
+ #one {
+     background-color: #e5989b;
+     border-width: 5px;
+     border-color: black;
+     border-style: solid;
+ }
+
+ #two {
+     background-color: #b5838d;
+     border-color: #ffcdb2;
+     border-width: 3px;
+     border-style: dashed;
+     border-left-width: 8px;
+     padding-left: 30px;
+     padding-right: 30px;
+     padding-top: 30px;
+     margin-left: 30px;
+     margin-right: 30px;
+     margin-top: 30px;
+ }
+
+ #three {
+     background-color: #6d6875;
+     border: 4px solid black;
+     border-radius: 20%;
+ } */
+
+ /* the above is about box model border and border radius.border can be defined individually as border color , border width etc and it 
+ can also be defined as individual sections like border left width, border right color etc (or) it can in defined in a 
+ single line as border where it should be defined in a order of width|style|color 
+ border radius is used to style the border structure.*/
+
+ /* #but1 { */
+ /* apply for all four sides */
+ /* padding: 20px;
+     margin: 20px;
+ } */
+
+ /* #but2 { */
+ /* vertical | horizontal */
+ /* padding: 5px 10px;
+     margin: 5px 10px;
+ } */
+
+ /* #but3 { */
+ /* top | horizontal | bottom */
+ /* padding: 2px 3px 3px;
+     margin: 2px 3px 3px;
+ } */
+
+ /* #but4 { */
+ /* top|right|bottom|left */
+ /* padding: 2px 3px 2px 3px;
+     margin: 2px 3px 2px 3px;
+ } */
+
+ /* the above is padding and margin shorthand properties .
+ if we want to remove padding or we dont want padding we can put 0 eg padding: 0 10px where vertical will be 0 and horizontal
+ will be 10px 
+  if we want to remove margin or we dont want margin we can put 0 eg margin: 0 10px where vertical will be 0 and horizontal
+ will be 10px */
+
+ /* h1 {
+     background-color: antiquewhite;
+     border: 1px solid black;
+     display: inline;
+     width: 10px;
+     height: 20px;
+     margin: 10px;
+     padding: 10px;
+
+ }
+
+ span {
+     background-color: aqua;
+     border: 1px solid black;
+     display: block;
+     width: 50px;
+     height: 50px;
+     margin: 50px;
+     padding: 50px;
+ }
+
+ div {
+     background-color: green;
+     border: 1px solid black;
+     display: inline-block;
+     width: 100px;
+     height: 100px;
+     margin: 10px;
+
+ } */
+
+ /* inline - width and height are ignored. margin and padding push elements away horizontally but vetrically.
+ block- block elements break the flow of the document. width,height,margin and padding are respected .
+ inline-block- behaves like an inline element except width,height,margin and padding are respected.*/
+
+ /* h2 {
+     display: none;
+ } */
+
+ /* display set to none means the element will be present in the document but it will not take any space */
+
+ /* section {
+     background-color: pink;
+     width: 500px;
+     height: 500px;
+ }
+
+ #alpha {
+     width: 50%;
+     height: 50%;
+     background-color: rgba(255, 255, 255, 0.5);
+
+ } */
+
+ /* the above is the example for alpha channel it basically changes the background color by taking the root background color
+ and it is defined as 'a' in rgba and the value will be between 0-1 and this color change will not effect the color of the text */
+
+ /* #opacity {
+     width: 50%;
+     height: 50%;
+     background-color: yellow;
+     opacity: 0.5;
+ } */
+
+ /* the above is the example for opacity it basically is used to fadein or fade out the background color but it also affects the text
+ color as well. */
+
+ /* div {
+     background-color: blueviolet;
+     width: 100px;
+     height: 100px;
+     border: 2px solid black;
+     display: inline-block;
+     margin: 10px
+ }
+
+ #mid {
+     background-color: green;
+ }
+
+ #static #mid {
+     position: static;
+     top: 100px;
+ } */
+
+ /* static
+The element is positioned according to the normal flow of the document.
+ The top, right, bottom, left, and z-index properties have no effect. This is the default value. */
+
+ /* #relative #mid {
+     position: relative;
+     top: 50px;
+ } */
+
+ /* relative
+The element is positioned according to the normal flow of the document,
+ and then offset relative to itself based on the values of top, right, bottom, and left. 
+ The offset does not affect the position of any other elements; thus, 
+ the space given for the element in the page layout is the same as if position were static.
+
+This value creates a new stacking context when the value of z-index is not auto. 
+Its effect on table-*-group, table-row, table-column, table-cell, and table-caption elements is undefined. */
+
+ /* #absolute {
+     position: relative;
+ }
+
+ #absolute #mid {
+     position: absolute;
+     bottom: 50px;
+ } */
+
+ /* absolute
+The element is removed from the normal document flow,
+ and no space is created for the element in the page layout. 
+ The element is positioned relative to its closest positioned ancestor (if any) or to the initial containing block. 
+ Its final position is determined by the values of top, right, bottom, and left.
+
+This value creates a new stacking context when the value of z-index is not auto. 
+The margins of absolutely positioned boxes do not collapse with other margins. */
+ /* 
+ #fixed #mid {
+     position: fixed;
+     top: 0;
+     left: 600px;
+ } */
+
+ /* fixed
+The element is removed from the normal document flow, 
+and no space is created for the element in the page layout. 
+The element is positioned relative to its initial containing block, 
+which is the viewport in the case of visual media. Its final position is determined by the values of top, right, bottom, and left.
+
+This value always creates a new stacking context. 
+In printed documents, the element is placed in the same position on every page. 
+
+imp- fixed property is generally used for nav bar.*/
+
+ /* .circle {
+     height: 200px;
+     width: 200px;
+     background-color: magenta;
+     transition: 2s;
+ }
+
+ .circle:hover {
+     background-color: cyan;
+     border-radius: 50%;
+    
+ } */
+
+ /* section div {
+     height: 100px;
+     width: 100px;
+     background-color: turquoise;
+     margin: 20px 0;
+     transition: margin-left 3s;
+ }
+
+ section:hover div {
+     margin-left: 500px;
+ }
+
+ div:nth-of-type(1) {
+     transition-timing-function: ease-in;
+ }
+
+ div:nth-of-type(2) {
+     transition-timing-function: ease-out;
+ }
+
+ div:nth-of-type(3) {
+     transition-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+ }
+
+ div:nth-of-type(4S) {
+     transition-timing-function: ease-in-out;
+ } */
+
+ /* tansition allow us to animate the transition of one property value to another property value
+ syntax- transition: propertyname | duration | timing function | delay 
+ eg transition : backgroundcolor 3s easein 1s*/
+
+ /* h1 {
+     background-color: green;
+     height: 30px;
+     width: 200px;
+     padding: 10px;
+     border: 5px solid black;
+     margin: 20px auto;
+     text-align: center;
+ }
+
+ h1:nth-of-type(2n) {
+     background-color: yellow;
+ }
+
+ h1:nth-of-type(3n) {
+     background-color: orange;
+ }
+
+ h1:nth-of-type(4n) {
+     background-color: orangered;
+ } */
+
+ /* note- in margin if we specify auto as in line 450 the text will automatically go to the center of the page */
+
+ /* section:nth-of-type(1) h1:nth-of-type(1) {
+     transform-origin: bottom right; */
+ /* transform orgin is is used to inform the css from where the action should start */
+ /* transform: rotate(45deg); */
+ /* rotate is used to rotate the tag starting from bottom right as the transform orgin is mentioned */
+ /* } */
+
+ /* section:nth-of-type(1) h1:nth-of-type(2) {
+
+     transform: scale(0.5); */
+ /* scale is  used to zoom in or zoom out the tag */
+ /* } */
+
+ /* section:nth-of-type(1) h1:nth-of-type(3) {
+
+     transform: translateX(200px); */
+ /* translateX is used to move the tag in x axis  */
+ /* } */
+ /* 
+ section:nth-of-type(1) h1:nth-of-type(4) {
+
+     transform: translateY(200px); */
+ /* translateY is used to move the tag in Y axis  */
+ /* } */
+
+ /* section:nth-of-type(2) h1:nth-of-type(1) {
+
+     transform: skew(30deg); */
+ /* skew is used to skew the tag to mentioned angle. if u run this code u will get to know properly */
+ /* } */
+
+ /* section:nth-of-type(2) h1:nth-of-type(3) {
+
+     transform: skew(10deg, 5deg); */
+ /* this skew is used to skew the tag both in x and y axis mentioned angle. if u run this code u will get to know properly */
+ /* } */
+
+ /* section:nth-of-type(2) h1:nth-of-type(4) {
+
+     transform: skew(30deg) translateX(-500px) rotate(180deg); */
+ /* in transform we can write multiple actions in a single line as well like it is in the above code */
+ /* } */
+
+ /* section:nth-of-type(2) {
+     transform: scale(0.5) translate(550px); */
+ /* here we are applying the transform to the entire section */
+ /* } */
+
+ /* the above is the css for transform */
+
+ /* body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     background-color: #151b29;
+ }
+
+ button {
+     background: none;
+     color: #ffa260;
+     border: 2px solid;
+     padding: 1em 2em;
+     font-size: 1em; */
+ /*we can use this code transition: all 0.2s; or the below one */
+ /* transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+ }
+
+ button:hover {
+     border-color: yellow;
+     color: aliceblue;
+     box-shadow: 0 0.5em 0.5em yellow;
+     transform: translateY(-5px);
+     cursor: pointer;
+ } */
+
+ /* fancy button hover effect code along */
+
+ /* body {
+     background-color: #fcfefe;
+ }
+
+ h1 {
+     text-align: center;
+     text-transform: uppercase;
+     border-bottom: 2px solid #6c6b6b;
+ }
+
+ img {
+     width: 30%;
+     margin: 1.5%;
+
+ } */
+
+ /* photo blog code along */

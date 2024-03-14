@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms example</title>
+</head>
+
+<body>
+    <h1>forms</h1>
+    <h2>forms defined and inside it actions are the one where the request is sent to get or post the received data</h2>
+    <h2>and inside form we can define input text where only the type of text is needed to be changed accordingly <br>
+        refer mdn intput
+        for reference</h2>
+    <button>outside the form</button>
+    <form action="/friendship">
+        <table>
+
+            <div>
+                <tr>
+                    <th><label for="justname">Name</label></th>
+
+                    <td><input type="text" placeholder="enter name" id="justname" name="usname"></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <th> <label for="justpw">Password</label></th>
+                    <td><input type="password" placeholder="enter password" id="justpw" name="passcode"></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <th><label for="justcolor">Choose color</label></th>
+                    <td><input type="color" id="justcolor"></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <th><label for="justnum">Number</label></th>
+                    <td><input type="number" placeholder="enter number" id="justnum"></td>
+                </tr>
+            </div>
+        </table>
+        <button>default submit</button>
+        <button type="button">specify type button</button>
+    </form>
+
+    <p>1:note- id in input and for in label should have same name and that name should be unique</p>
+    <p>2:if we have a button inside the forms the default behaviouris to submit the form <br> so to avoid it we can
+        specify
+        type as button in the button</p>
+    <p>3:name atribute is used when we submit a data or send a data req to server it will be labelled under this name
+    </p>
+
+    <form action="https://www.google.com/search">
+        <label for="searching">search bar</label>
+        <input type="text" placeholder="search here" id="searching" name="q">
+        <button>submit</button>
+    </form>
+    <p>if we donot have submit button inside the form we can just click enter button it will submit the form</p>
+
+    <h2>check box and radio buttons</h2>
+    <form action="/examples">
+        <input type="checkbox" id="agree" name="agreement" checked>
+        <label for="agree">accept terms and conditions</label>
+        <button>submit</button>
+    </form>
+    <p>checked in the input is defined so that the checkbox will automatically be checked by default</p>
+
+    <form action="/radiocheck">
+        <h2>enter your size</h2>
+        <div>
+            <label for="radioch1">S</label>
+            <input type="radio" id="radioch1" name="checkone" value="S">
+        </div>
+        <div>
+            <label for="radioch2">M</label>
+            <input type="radio" id="radioch2" name="checkone" value="M">
+        </div>
+        <div>
+            <label for="radioch3">L</label>
+            <input type="radio" id="radioch3" name="checkone" value="L">
+        </div>
+        <button>submit</button>
+
+    </form>
+    <p>In radion button if we assign all the inputs to the same name then it will all be grouped into one so that we can
+        check one</p>
+    <p>in radio buttons if we submit one option it wont show the value which we selected by default so we define value
+        in input tag <br>
+        where we can get the info of what value is been selected
+    </p>
+
+    <h2>select elements</h2>
+    <form action="selecteg">
+        <label for="petchoice">choose the pet you want</label>
+        <select name="pet" id="petchoice">
+            <option value="">choose a pet</option>
+            <option value="cat">cat</option>
+            <option value="dog" selected>dog</option>
+            <option value="rabbit">rabbit</option>
+            <option value="snake">snake</option>
+        </select>
+        <button>submit</button>
+    </form>
+    <p>to pre select an option by default we mention selected in the select->option tag</p>
+
+    <h2>range and text area</h2>
+    <form action="rnt">
+        <label for="amc">amount of cheese</label>
+        <input type="range" max="10" min="1" id="amc" name="amtofcheese">
+
+        <label for="req">type you request</label>
+        <textarea id="req" name="request" id="" cols="30" rows="10" placeholder="enter you problems"></textarea>
+
+        <button>submit</button>
+    </form>
+
+    <h2>validation demo</h2>
+    <form action="vd">
+        <div>
+            <label for="un">username:</label>
+            <input type="text" placeholder="username" name="un" id="un" required>
+        </div>
+        <div>
+            <label for="pw">password</label>
+            <input type="password" id="pw" name="pw" placeholder="password" required>
+        </div>
+        <button>submit</button>
+    </form>
+
+
+</body>
+
+</html>

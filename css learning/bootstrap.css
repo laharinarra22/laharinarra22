@@ -1,0 +1,17 @@
+body {
+    background-color: pink;
+}
+
+.candies,
+.des {
+    color: red;
+}
+
+.features,
+.candy {
+    color: white;
+}
+
+.features:hover {
+    color: red;
+}
