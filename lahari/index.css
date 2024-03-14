@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Anta", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+:root {
+    --bg: #081b29;
+    --second-bg: #112e42;
+    --text: #ededed;
+    --main: #00abf0;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+html {
+    overflow-x: hidden;
+    font-size: 70%;
+}
+
+/* styling for nav and intro */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1% 9%;
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text);
+}
+
+.navbar a {
+    font-size: 15px;
+    color: var(--text);
+    font-weight: 500;
+    margin-left: 13px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main);
+}
+
+#minimize {
+    font-size: 30px;
+    display: none;
+    color: var(--text);
+    cursor: pointer;
+}
+
+section {
+    min-height: 100vh;
+    padding: 1% 10% 0.2%;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    padding: 10%;
+}
+
+.content {
+    max-width: 60rem;
+}
+
+.content h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.content .styling h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--main);
+}
+
+.content p {
+    font-size: 16px;
+    margin: 15px 0 50px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 34.5rem;
+    height: 5rem;
+}
+
+.buttons .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    background-color: var(--main);
+    border: 0.5px solid var(--main);
+    border-radius: 8px;
+    color: var(--text);
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.buttons .btn:hover {
+    color: #081b29;
+    background-color: aquamarine;
+    transition: all 0.5s linear;
+}
+
+.socialmedia {
+    width: 300px;
+    height: 200px;
+    padding-left: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.socialmedia a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 40%;
+    font-size: 30px;
+    color: var(--text);
+    background-color: cornflowerblue;
+}
+
+.socialmedia a:hover {
+    transform: scale(1.1);
+    background-color: var(--main);
+    transition: all 0.2s linear;
+}
+
+/* styling for about */
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding-bottom: 50px; */
+    background-color: var(--second-bg);
+    gap: 2rem;
+}
+
+.btns .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    background-color: var(--main);
+    border: 0.5px solid var(--main);
+    border-radius: 8px;
+    color: var(--text);
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.btns .btn:hover {
+    color: #081b29;
+    background-color: aquamarine;
+    transition: all 0.5s linear;
+    cursor: pointer;
+}
+
+.heading {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.heading span {
+    color: var(--main);
+}
+
+.aboutimg {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid aquamarine;
+}
+
+.aboutimg img {
+    width: 198px;
+    border-radius: 50%;
+}
+
+.aboutcontent {
+    /* background-color: blueviolet; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.aboutcontent h3 {
+    font-size: 25px;
+}
+
+.aboutcontent p {
+    font-size: 18px;
+}
+
+#moreContent {
+    display: none;
+}
+
+.edu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5rem;
+}
+
+.edu .edurow {
+    display: flex;
+    gap: 5rem;
+}
+
+.educol .title {
+    font-size: 20px;
+    margin: 0 0 1.5rem 2rem;
+}
+
+.edudetails .edcontent {
+    border-left: 2px solid var(--main);
+
+}
+
+.edcontent .content {
+    padding-left: 20px;
+}
+
+.content .year {
+    font-size: 20px;
+}
+
+.content h3 {
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+/* .forspace {
+    padding-top: 10px;
+} */
+
+/* for myskill */
+
+.skill {
+    background-color: var(--second-bg);
+}
+
+.one {
+    display: flex;
+    border: 2px solid aquamarine;
+    padding: 15px;
+    justify-content: space-around;
+}
+
+.one:nth-of-type(1) {
+    border-bottom: none;
+}
+
+.one:nth-of-type(2) {
+    border-bottom: none;
+    border-top: none;
+}
+
+.one:nth-of-type(3) {
+    border-top: none;
+}
+
+.one:nth-of-type(4) {
+    border-bottom: none;
+}
+
+.one:nth-of-type(5) {
+    border-bottom: none;
+    border-top: none;
+}
+
+.one:nth-of-type(6) {
+    border-top: none;
+}
+
+.skillmain h3 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.imgsize {
+    width: 100px;
+    height: 100px;
+}
+
+.carousel {
+    position: relative;
+    max-width: 1400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 2px solid aquamarine;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.skillinfo h3 {
+    display: flex;
+    justify-content: center;
+    padding-top: 3px;
+}
+
+.skill .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+img:hover {
+    transform: scale(1.1);
+    transition: all 0.2s linear;
+}
+
+.forspac {
+    padding-top: 10px;
+}
+
+/* my project design */
+
+#cardd {
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+#cardhead {
+    font-size: 30px;
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+#cardcontent {
+    font-size: 20px;
+    color: var(--main);
+}
+
+#proj .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 70px;
+    gap: 5px;
+}
+
+#cardd:hover {
+    transform: scale(1.1);
+    transition: all 0.2s linear;
+}
+
+.cardspa {
+    padding-top: 50px;
+}
+
+/* contact details */
+
+.contact {
+    background-color: var(--second-bg);
+    /* width: 100%;
+
+    height: 100vh;
+    background-image: url('images/back2.jpg');
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat; */
+
+
+}
+
+.fulltext {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.contactleft {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px
+}
+
+.fulltext .socialmedia {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactdet {
+    width: 400px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+.contactdet1 {
+    width: 400px;
+    height: 200px;
+    font-size: 15px;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.submitform {
+    width: 100px;
+    height: 30px;
+
+    background-color: var(--main);
+    border: 0.5px solid var(--main);
+    border-radius: 8px;
+    color: var(--text);
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.submitform:hover {
+    color: #081b29;
+    background-color: aquamarine;
+    transition: all 0.5s linear;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding-bottom: 50px;
+    padding-top: 60px;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialforsubmit {
+    padding-left: 55px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.socialforsubmit a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 40%;
+    font-size: 30px;
+    color: var(--text);
+    background-color: cornflowerblue;
+}
+
+.socialforsubmit a:hover {
+    transform: scale(1.1);
+    background-color: var(--main);
+    transition: all 0.2s linear;
+}
