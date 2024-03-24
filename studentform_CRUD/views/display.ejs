@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+</head>
+
+<body>
+    <h2>Student Information</h2>
+    <ul>
+        <% students.forEach(student=> { %>
+            <li>
+                <%= student.name %> | <%= student.address %> | <%= student.phoneNumber %> | <%= student.age %> | <a
+                                    href="/update/<%= student.id %>">Update</a> | <a
+                                    href="/delete/<%= student.id %>">Delete</a>
+            </li>
+            <% }); %>
+    </ul>
+</body>
+
+</html>
